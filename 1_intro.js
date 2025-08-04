@@ -50,6 +50,7 @@ console.log(typeof a); // "string"
 
 
 /*types of data in JavaScript*/
+
 // JavaScript has several data types, including:
 // 1. Primitive types: Number, String, Boolean, Null, Undefined, Symbol, BigInt
 let num = 42; 
@@ -66,3 +67,89 @@ let sym = Symbol("unique");
 console.log(typeof sym); // "symbol"
 let bigIntNum = BigInt(1234567890123456789012345678901234567890);
 console.log(typeof bigIntNum); // "bigint"
+
+
+/*operators*/
+
+// JavaScript supports various operators, including:
+// 1. Arithmetic Operators: +, -, *, /, %, ++, --
+let x = 10;
+let y = 5;
+console.log(x + y); // 15
+console.log(x - y); // 5
+console.log(x * y); // 50
+console.log(x / y); // 2
+console.log(x % y); // 0
+
+// 2. Unary Operators: + (unary plus), - (unary minus), ++ (increment), -- (decrement)
+console.log(+x); // 10 (unary plus, no effect on number)
+console.log(-x); // -10 (unary minus, negates the number)
+console.log(x++); // 10 (post-increment)
+console.log(x); // 11 (x is now incremented)
+console.log(++y); // 6 (pre-increment, y is now incremented)
+console.log(y--); // 6 (post-decrement)
+console.log(y); // 5 (y is now decremented)
+
+// 3. Assignment Operators: =, +=, -=, *=, /=, %=
+let z = 10;
+z += 5; // z = z + 5
+console.log(z); // 15
+z -= 3; // z = z - 3
+console.log(z); // 12
+z *= 2; // z = z * 2
+console.log(z); // 24
+z /= 4; // z = z / 4
+console.log(z); // 6
+z %= 2; // z = z % 2
+console.log(z); // 0 (remainder of 6 divided by 2)
+console.log(40*"5"); // 200 type coercion (string '5' is converted to number 5)
+console.log(40*parseInt("5")); // 200 type conversion (string '5' is explicitly converted to number 5)
+
+
+// 4. Comparison Operators: ==, ===, !=, !==, <, >, <=, >=
+console.log(5 == '5'); // true (loose equality, type coercion)
+console.log(5 === '5'); // false (strict equality, no type coercion)
+console.log(5 != '5'); // false (loose inequality, type coercion)
+console.log(5 !== '5'); // true (strict inequality, no type coercion)
+console.log(10 < 20); // true
+console.log(10 > 20); // false
+console.log(10 <= 10); // true
+console.log(10 >= 5); // true
+
+// 5. Logical Operators: &&, ||, !
+let a1 = true;
+let b1 = false;
+console.log(a1 && b1); // false (logical AND)
+console.log(a1 || b1); // true (logical OR)
+console.log(!a1); // false (logical NOT)
+
+// 6. Bitwise Operators: &, |, ^, ~, <<, >>
+let a2 = 5; // 0101 in binary
+let b2 = 3; // 0011 in binary
+console.log(a2 & b2); // 1 (0001 in binary, bitwise AND)
+console.log(a2 | b2); // 7 (0111 in binary, bitwise OR)
+console.log(a2 ^ b2); // 6 (0110 in binary, bitwise XOR)
+console.log(~a2); // -6 (bitwise NOT, flips bits)
+console.log(a2 << 1); // 10 (1010 in binary, left shift)
+console.log(a2 >> 1); // 2 (0010 in binary, right shift)
+
+// 7. Ternary Operator: condition ? expr1 : expr2
+let age = 18;
+let canVote = (age >= 18) ? "Yes" : "No";
+console.log(canVote); // "Yes"
+
+// 8. Typeof Operator: typeof
+console.log(typeof 42); // "number"
+console.log(typeof "Hello"); // "string"
+console.log(typeof true); // "boolean"
+console.log(typeof null); // "object" (this is a known JavaScript quirk)
+console.log(typeof undefined); // "undefined"
+console.log(typeof Symbol("unique")); // "symbol"
+console.log(typeof BigInt(123)); // "bigint"
+
+// 9. Instanceof Operator: checks if an object is an instance of a specific class
+class Person {}
+let person = new Person();
+console.log(person instanceof Person); // true
+console.log(person instanceof Object); // true (all objects are instances of Object)
+
