@@ -26,3 +26,10 @@ a.shift();
 console.log(a);
 
 //splice()
+a.splice(2,1,"A");//(start, delete , add)
+console.log(a);
+
+//slice()
+console.log(a.slice(2,4));
+
+
