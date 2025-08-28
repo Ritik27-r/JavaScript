@@ -22,3 +22,20 @@ var person = {
 // person.city = "Faridabad"
 // console.log(person.city)
 console.log(person.city.place.place2)
+
+var city="gg"
+var person = {
+    fname: "Ritik",
+    lname: "Rawat",
+    age: 23,
+    city
+}
+// var person1 ={
+//     ...person
+// }
+// console.log(person1)
+var person2 = Object.assign({},{a:1,b:2,c:3,person})
+console.log(person2)
+
+var person2 = Object.assign({},{a:1,b:2,c:3,...person})
+console.log(person2)

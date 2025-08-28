@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Document Object Model</h1>
+    <p class="info">This is a para</p>
+    <h2 class="info">Random Text</h2>
+    <b class="info">Bold Text</b>
+    <div id="main">
+        <nav>Hello Good Morning</nav>
+        <h1 style="display: none;">Ritik</h1>
+    </div>
+    <h3 id="heading">jndkci</h3>
+    <button onclick="alert(Hello)">Click</button>
+    <button onclick="changeText()">Different</button>
+    <script>
+        var ele = document.getElementsByClassName("info")
+        function changeText(){
+            console.log(ele)
+        }
+
+        /*function changeText(){
+            var ele = document.getElementById("heading")
+            ele.innerHTML ="<h1>Hey</h1>"
+        }*/
+
+    </script>
+</body>
+
+</html>
