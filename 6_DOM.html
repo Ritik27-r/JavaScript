@@ -19,11 +19,23 @@
     <h3 id="heading">jndkci</h3>
     <button onclick="alert(Hello)">Click</button>
     <button onclick="changeText()">Different</button>
+    <form>
+        <input type="text" name="para">
+        <input type="email" name="para" id="">
+    </form>
     <script>
-        var ele = document.getElementsByClassName("info")
-        function changeText(){
-            console.log(ele)
-        }
+        var ele = document.getElementsByName("para");
+        var ele1 = document.getElementsByTagName("h1");
+        console.log(ele);
+        console.log(ele1);
+
+        // function changeText(){
+        //     var ele = document.getElementsByClassName("info") //returns array of elements
+        //     console.log(ele);
+        //     ele[0].style.backgroundColor = "Green"
+        //     ele[1].style.backgroundColor = "red"
+        //     ele[2].style.backgroundColor = "pink"
+        // }
 
         /*function changeText(){
             var ele = document.getElementById("heading")
