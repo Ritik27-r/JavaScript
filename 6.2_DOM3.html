@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+        .pink{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="" id="heading">Document Object Model</h1>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+    <button onclick="red()">Red</button>
+    <button onclick="pink()">Pink</button>
+    <script>
+        var ele = document.getElementById("heading");
+        function green(){
+            // ele.classList.remove("red");
+            // ele.classList.add("green");
+            // console.log(ele.classList);
+            ele.setAttribute("style","background-color:green");
+            console.log(ele.getAttribute("style"))
+        }
+        function blue(){
+            ele.setAttribute("style","background-color:blue");
+            console.log(ele.getAttribute("style"))
+        }
+        function red(){
+            ele.setAttribute("style","background-color:red");
+            console.log(ele.getAttribute("style"))
+        }
+        function pink(){
+            ele.setAttribute("style","background-color:pink");
+            console.log(ele.getAttribute("style"))
+        }
+            
+    </script>
+</body>
+</html>

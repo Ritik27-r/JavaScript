@@ -20,9 +20,15 @@
             <h1 class="content">Good Morning</h1>
         </div>
     </div>
+    <button onclick="checktext()">Click Me</button>
 
-    <script>  
-
+    <script>
+        var ele = document.querySelectorAll("h1");
+        // var ele = document.querySelector(".container .section> .content");
+        // var ele = document.querySelectorAll("content");//returns all with h1 query
+        function checktext(){
+            console.log(ele);
+        }
     </script>
 </body>
 </html>
