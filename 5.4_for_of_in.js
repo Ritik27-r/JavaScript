@@ -46,5 +46,3 @@ console.log(obj)
 
 var d = person.propertyIsEnumerable('lname')
 console.log(d)
-
-

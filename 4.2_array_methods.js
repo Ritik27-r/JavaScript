@@ -28,40 +28,35 @@ console.log(sum);
 var a = [23,56,22,45,77,11,34,5];
 var arr1=a.sort((a,b)=>{
     return a-b
-}
-)
+})
 console.log(arr1)
 
 
 //find()
 var a3 =a.find((item,index)=>{
     return item%2 == 0
-}
-)
+})
 console.log(a3)
 
 
 //findIndex()
 var a4 = a.findIndex((item,index)=>{
     return item%2 ==0
-}
-)
+})
 console.log(a4);
 
 
 //every() - return boolean
 var a6 = a.every((item,index)=>{
     return item>5;
-}
-)
+})
 console.log(a6)
 
 
 //some() - return boolean
 var a5 = a.some((item,index)=>{
     return item>5;
-}
-)
+})
 console.log(a5);
 
 

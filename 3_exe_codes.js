@@ -7,6 +7,7 @@ greet();
 function greet() {
     console.log("Hello, World!");
 }
+
 //What gets hoisted?
 /*
 1.) Functions decklarations are hoisted completely, meaning you can call them before they are defined in the code.

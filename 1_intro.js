@@ -32,8 +32,7 @@ const f = 10;
 console.log(f); 
 // const f = 20; // cannot redeclare, will throw an error
 // f = 20; // cannot update, will throw an error
-console.log(f); // will still log 10
-
+console.log(f); // will still log 10 
 
 
 /* Static vs Dynamic Typing*/

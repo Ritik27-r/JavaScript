@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mouse events</h1>
+    <!-- <button onmousedown="fun(event)">Click</button> -->
+    <!-- <button onmousemove="fun(event)">Click</button> -->
+    <!-- <button onmouseleave="fun(event)">Click</button> -->
+    <!-- <button onmouseup="fun(event)">Click</button> -->
+    <!-- <input type="text" onkeydown="fun(event)"> -->
+    <input type="text" onfocus="fun(event)" onblur="funn(event)" onchange="funnnn(event)">
+
+    <script>
+        function fun(event) {
+            console.log(event.type);
+        }
+        function funn(event) {
+            event.target.style.backgroundColor = "red";
+        }
+        function funnnn(event){
+            console.log("Adfar");
+        }
+    </script>
+</body>
+
+</html>

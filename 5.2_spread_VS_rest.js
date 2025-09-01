@@ -10,12 +10,14 @@ var person1 = {
 console.log(person)
 console.log(person1)
 
+
 var DataBase =[1,4,5];//Example
 function add(a,b,c){
     console.log(a+b+c)
 }
 add(...DataBase);
 console.log()
+
 
 //Rest
 console.log("Rest")

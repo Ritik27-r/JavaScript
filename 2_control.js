@@ -5,7 +5,7 @@ if(a > 10) {
     console.log("a is not greater than 10");
 }
 
-console.log(a>20?"true":"false");
+console.log(a>20?"true":"false"); //
 
 
 var day = 1;

@@ -28,7 +28,7 @@ var person = {
     fname: "Ritik",
     lname: "Rawat",
     age: 23,
-    city
+    city:city
 }
 // var person1 ={
 //     ...person

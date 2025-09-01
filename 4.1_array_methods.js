@@ -31,5 +31,3 @@ console.log(a);
 
 //slice()
 console.log(a.slice(2,4));
-
-

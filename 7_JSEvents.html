@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>College Wallah</h1>
+        <h2 id="heading">Content</h2>
+    </div>
+    <div id="old">
+        <h1 id="main">Ritik Rawat</h1>
+    </div>
+    <button onclick="funn()">Replace element</button>
+    <button onclick="fun()">Add element</button>
+    <script>
+        /*const container = document.getElementById("container");
+        const heading = document.getElementById("heading");
+        function fun(){
+            const h2 = document.createElement("h2")
+            h2.textContent = "Ritik Rawat"
+            console.log(h2)
+            // container.appendChild(h2)//Adds a child element at the end
+            // container.append("Hello",h2)//Can add multiple child but same as appendChild
+            // container.prepend(h2)//Adds child element but before parent
+            container.insertBefore(h2,heading)//Add h2 before heading
+        }*/
+        const old = document.getElementById("old");
+        const h1 = document.getElementById("main");
+        const mark = document.createElement("mark");
+        mark.textContent = "Replaced";
+        function funn() {
+            // old.replaceChild(mark,h1);
+            h1.replaceWith(mark);
+        }
+
+    </script>
+</body>
+
+</html>
